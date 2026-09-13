@@ -1,0 +1,344 @@
+{
+  "exportedAt": "2026-09-13T05:16:46.996Z",
+  "exportedBy": "值班员",
+  "sites": [
+    {
+      "id": "site_3fd30887",
+      "name": "南海一号·遗址A",
+      "location": "阳江海域",
+      "depthLimitM": 30,
+      "personnel": [
+        {
+          "id": "p_f9446b70",
+          "name": "林海（同事改）",
+          "role": "潜水监督",
+          "sacRate": 18,
+          "maxDepthM": 40
+        },
+        {
+          "id": "p_6ec00f0d",
+          "name": "苏晴",
+          "role": "考古潜水员",
+          "sacRate": 22,
+          "maxDepthM": 30
+        },
+        {
+          "id": "p_8f54e2f3",
+          "name": "赵潜",
+          "role": "考古潜水员",
+          "sacRate": 25,
+          "maxDepthM": 24
+        }
+      ],
+      "cylinders": [
+        {
+          "id": "c_04dc3e1e",
+          "code": "瓶-01",
+          "capacityL": 12,
+          "pressureBar": 200,
+          "gasType": "空气"
+        },
+        {
+          "id": "c_9842021d",
+          "code": "瓶-02",
+          "capacityL": 12,
+          "pressureBar": 200,
+          "gasType": "空气"
+        },
+        {
+          "id": "c_817d90a5",
+          "code": "瓶-03",
+          "capacityL": 12,
+          "pressureBar": 200,
+          "gasType": "空气"
+        },
+        {
+          "id": "c_a988ef8d",
+          "code": "瓶-04",
+          "capacityL": 12,
+          "pressureBar": 200,
+          "gasType": "空气"
+        },
+        {
+          "id": "c_544a4de1",
+          "code": "瓶-05",
+          "capacityL": 15,
+          "pressureBar": 180,
+          "gasType": "空气"
+        }
+      ],
+      "weather": [
+        {
+          "id": "w_aaae97a1",
+          "date": "2026-09-14",
+          "windKts": 8,
+          "waveM": 0.6,
+          "visM": 8,
+          "windowStart": "07:00",
+          "windowEnd": "12:00",
+          "note": "上午窗口"
+        },
+        {
+          "id": "w_02b6483f",
+          "date": "2026-09-15",
+          "windKts": 18,
+          "waveM": 1.6,
+          "visM": 5,
+          "windowStart": "08:00",
+          "windowEnd": "11:00",
+          "note": "风大，慎排"
+        }
+      ],
+      "dives": [
+        {
+          "id": "dive_d97d1d95",
+          "code": "DIVE-01",
+          "date": "2026-09-14",
+          "start": "07:30",
+          "end": "08:15",
+          "depthM": 12,
+          "goal": "船体东侧测绘",
+          "diverIds": [
+            "p_f9446b70",
+            "p_6ec00f0d"
+          ],
+          "cylinderIds": [
+            "c_04dc3e1e",
+            "c_9842021d",
+            "c_817d90a5",
+            "c_a988ef8d"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "id": "dive_ec59ff91",
+          "code": "DIVE-02",
+          "date": "2026-09-14",
+          "start": "09:30",
+          "end": "10:30",
+          "depthM": 20,
+          "goal": "陶片取样（依赖测绘完成）",
+          "diverIds": [
+            "p_6ec00f0d",
+            "p_8f54e2f3"
+          ],
+          "cylinderIds": [
+            "c_544a4de1"
+          ],
+          "status": "planned"
+        },
+        {
+          "id": "dive_5aab1247",
+          "code": "DIVE-09",
+          "date": "2026-09-14",
+          "start": "11:00",
+          "end": "11:45",
+          "depthM": 18,
+          "goal": "",
+          "diverIds": [
+            "p_f9446b70"
+          ],
+          "cylinderIds": [
+            "c_04dc3e1e",
+            "c_9842021d"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "dep_42dd78f7",
+          "predId": "dive_d97d1d95",
+          "succId": "dive_ec59ff91",
+          "reason": "取样须等测绘完成"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_e75ba4b4",
+      "siteId": "site_3fd30887",
+      "diveId": "dive_d97d1d95",
+      "title": "DIVE-01 测绘器材清单核对",
+      "detail": "出发前核对测绳、绘图板、相机防水壳",
+      "status": "draft",
+      "createdBy": "林海",
+      "createdAt": "2026-09-13T05:16:45.570Z",
+      "updatedAt": "2026-09-13T05:16:45.570Z",
+      "history": []
+    },
+    {
+      "id": "task_c1aced56",
+      "siteId": "site_3fd30887",
+      "diveId": null,
+      "title": "声呐设备下水前检测",
+      "detail": "检查电池与缆绳",
+      "status": "closed",
+      "createdBy": "值班员",
+      "createdAt": "2026-09-13T05:16:46.097Z",
+      "updatedAt": "2026-09-13T05:16:46.564Z",
+      "history": [
+        {
+          "ts": "2026-09-13T05:16:46.148Z",
+          "actor": "值班员",
+          "action": "submit",
+          "from": "draft",
+          "to": "submitted",
+          "note": ""
+        },
+        {
+          "ts": "2026-09-13T05:16:46.244Z",
+          "actor": "值班员",
+          "action": "review",
+          "from": "submitted",
+          "to": "reviewed",
+          "note": ""
+        },
+        {
+          "ts": "2026-09-13T05:16:46.346Z",
+          "actor": "值班员",
+          "action": "approve",
+          "from": "reviewed",
+          "to": "approved",
+          "note": ""
+        },
+        {
+          "ts": "2026-09-13T05:16:46.443Z",
+          "actor": "值班员",
+          "action": "execute",
+          "from": "approved",
+          "to": "executing",
+          "note": ""
+        },
+        {
+          "ts": "2026-09-13T05:16:46.564Z",
+          "actor": "值班员",
+          "action": "close",
+          "from": "executing",
+          "to": "closed",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task_27c33f6a",
+      "siteId": "site_3fd30887",
+      "diveId": null,
+      "title": "重复提交演示",
+      "detail": "",
+      "status": "submitted",
+      "createdBy": "值班员",
+      "createdAt": "2026-09-13T05:16:46.796Z",
+      "updatedAt": "2026-09-13T05:16:46.826Z",
+      "history": [
+        {
+          "ts": "2026-09-13T05:16:46.826Z",
+          "actor": "值班员",
+          "action": "submit",
+          "from": "draft",
+          "to": "submitted",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "task_ext_1",
+      "siteId": "site_3fd30887",
+      "diveId": null,
+      "title": "同事补充的任务",
+      "detail": "",
+      "status": "draft",
+      "createdBy": "同事",
+      "createdAt": "2026-09-13T00:00:00.000Z",
+      "updatedAt": "2026-09-13T00:00:00.000Z",
+      "history": []
+    }
+  ],
+  "audit": [
+    {
+      "id": "a_afa8b32e",
+      "ts": "2026-09-13T05:16:45.570Z",
+      "actor": "系统",
+      "action": "init",
+      "detail": "载入演示数据"
+    },
+    {
+      "id": "a_aed15dd3",
+      "ts": "2026-09-13T05:16:45.930Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "新建潜次 DIVE-09"
+    },
+    {
+      "id": "a_de7dcc67",
+      "ts": "2026-09-13T05:16:45.971Z",
+      "actor": "值班员",
+      "action": "undo",
+      "detail": "撤销一步操作"
+    },
+    {
+      "id": "a_151e7c77",
+      "ts": "2026-09-13T05:16:45.980Z",
+      "actor": "值班员",
+      "action": "redo",
+      "detail": "重做一步操作"
+    },
+    {
+      "id": "a_d20b7a2e",
+      "ts": "2026-09-13T05:16:46.097Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "新建任务：声呐设备下水前检测"
+    },
+    {
+      "id": "a_7fba5d63",
+      "ts": "2026-09-13T05:16:46.148Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务提交：声呐设备下水前检测"
+    },
+    {
+      "id": "a_4059c89e",
+      "ts": "2026-09-13T05:16:46.244Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务复核：声呐设备下水前检测"
+    },
+    {
+      "id": "a_d05307b5",
+      "ts": "2026-09-13T05:16:46.346Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务批准：声呐设备下水前检测"
+    },
+    {
+      "id": "a_e22ad6d3",
+      "ts": "2026-09-13T05:16:46.443Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务执行：声呐设备下水前检测"
+    },
+    {
+      "id": "a_018f1d38",
+      "ts": "2026-09-13T05:16:46.564Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务关闭：声呐设备下水前检测"
+    },
+    {
+      "id": "a_3fc13326",
+      "ts": "2026-09-13T05:16:46.796Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "新建任务：重复提交演示"
+    },
+    {
+      "id": "a_821ebb02",
+      "ts": "2026-09-13T05:16:46.827Z",
+      "actor": "值班员",
+      "action": "commit",
+      "detail": "任务提交：重复提交演示"
+    }
+  ]
+}

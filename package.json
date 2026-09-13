@@ -1,0 +1,13 @@
+{
+  "name": "uw-arch-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "水下考古协作调度台（离线单页应用）",
+  "scripts": {
+    "test": "node --test tests/",
+    "check:browser": "node tools/browser-check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
